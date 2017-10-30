@@ -1,0 +1,7 @@
+<label>Entrez le nom d'une ville</label>
+<input id="city" ng-model="cityName"/>
+<button id="validate" ng-click="$ctrl.validate(cityName)" ng-show="cityName.length >= 3">Valider</button>
+<p id="error" ng-show="$ctrl.error">{{$ctrl.error}}</p>
+<ul id="cities">
+    <li ng-repeat="city in $ctrl.cities">{{city}}</li>
+</ul>
